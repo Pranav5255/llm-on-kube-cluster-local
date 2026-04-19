@@ -1,0 +1,47 @@
+# Local tool binaries (scripts/install-tools.sh)
+/bin/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+.env/
+.env
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets & credentials (never commit)
+*.pem
+*.key
+id_rsa
+*.kubeconfig
+kubeconfig
+.kube/
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+tmp/
+temp/
+
+# Optional: generated benchmark output (remove this line if you want results committed)
+# benchmark/benchmark-results.csv

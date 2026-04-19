@@ -1,0 +1,19 @@
+# GPU variant (USE_GPU=1): see kind-cluster-gpu.yaml (adds NVIDIA extraMounts).
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    extraPortMappings:
+      - containerPort: 30080
+        hostPort: 8080
+        listenAddress: "127.0.0.1"
+        protocol: TCP
+      - containerPort: 30081
+        hostPort: 8081
+        listenAddress: "127.0.0.1"
+        protocol: TCP
+      # Grafana Service NodePort (helm/values-kps.yaml grafana.service.nodePort) → host for demos
+      - containerPort: 32000
+        hostPort: 3333
+        listenAddress: "127.0.0.1"
+        protocol: TCP

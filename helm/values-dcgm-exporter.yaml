@@ -1,0 +1,6 @@
+# DCGM exporter: Prometheus metrics for NVIDIA GPUs (DCGM_FI_*).
+# ServiceMonitor must carry the same `release` label as kube-prometheus-stack (install-monitoring.sh uses release name: kps).
+serviceMonitor:
+  enabled: true
+  additionalLabels:
+    release: kps

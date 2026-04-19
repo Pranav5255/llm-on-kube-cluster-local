@@ -1,0 +1,20 @@
+# Strategic-merge patch: add GPU request/limit to Ollama container.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ollama
+  namespace: llm
+spec:
+  template:
+    spec:
+      containers:
+        - name: ollama
+          resources:
+            requests:
+              cpu: "500m"
+              memory: 4Gi
+              nvidia.com/gpu: "1"
+            limits:
+              cpu: "4"
+              memory: 12Gi
+              nvidia.com/gpu: "1"

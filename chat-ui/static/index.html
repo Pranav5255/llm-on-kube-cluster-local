@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OSS LLM Chat</title>
+  <style>
+    :root { --bg: #0f1419; --panel: #1a2332; --text: #e7ecf3; --muted: #8b9bb4; --accent: #3b82f6; --user: #22c55e; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 1rem 1.25rem; border-bottom: 1px solid #2a3544; background: var(--panel); }
+    h1 { margin: 0; font-size: 1.1rem; }
+    .sub { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; }
+    main { max-width: 52rem; margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    #log { border: 1px solid #2a3544; border-radius: 8px; background: #111820; min-height: 280px; max-height: 50vh; overflow-y: auto; padding: 0.75rem; font-size: 0.92rem; line-height: 1.45; }
+    .msg { margin-bottom: 0.75rem; }
+    .msg strong { color: var(--user); }
+    .msg.user strong { color: var(--accent); }
+    form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    input[type="text"] { flex: 1 1 200px; padding: 0.6rem 0.75rem; border-radius: 6px; border: 1px solid #2a3544; background: #0c1017; color: var(--text); }
+    button { padding: 0.6rem 1rem; border-radius: 6px; border: none; background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .hint { color: var(--muted); font-size: 0.8rem; }
+    pre { white-space: pre-wrap; word-break: break-word; margin: 0.35rem 0 0; color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Open-source LLM (Kubernetes)</h1>
+    <div class="sub">Ollama · phi3:mini · OpenAI-compatible API</div>
+  </header>
+  <main>
+    <div class="hint">Try: “Which model are you?” · “What’s the latest information you have?”</div>
+    <div id="log" aria-live="polite"></div>
+    <form id="f">
+      <input type="text" id="q" placeholder="Message…" autocomplete="off" required />
+      <button type="submit" id="go">Send</button>
+    </form>
+  </main>
+  <script>
+    const log = document.getElementById("log");
+    const f = document.getElementById("f");
+    const q = document.getElementById("q");
+    const go = document.getElementById("go");
+    function addMsg(role, text) {
+      const d = document.createElement("div");
+      d.className = "msg " + (role === "user" ? "user" : "assistant");
+      d.innerHTML = "<strong>" + (role === "user" ? "You" : "Assistant") + "</strong><pre>" + text + "</pre>";
+      log.appendChild(d);
+      log.scrollTop = log.scrollHeight;
+    }
+    f.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const text = q.value.trim();
+      if (!text) return;
+      addMsg("user", text);
+      q.value = "";
+      go.disabled = true;
+      addMsg("assistant", "Generating… (CPU inference can take 1–5+ minutes on first reply — wait or check ollama logs.)");
+      const pending = log.lastElementChild;
+      try {
+        const r = await fetch("/v1/chat/completions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "phi3:mini",
+            messages: [{ role: "user", content: text }],
+            stream: false,
+          }),
+        });
+        const raw = await r.text();
+        let out;
+        if (!r.ok) {
+          out = "HTTP " + r.status + ": " + raw.slice(0, 2000);
+        } else {
+          try {
+            const j = JSON.parse(raw);
+            out = j.choices?.[0]?.message?.content ?? raw;
+          } catch {
+            out = raw;
+          }
+        }
+        if (pending && pending.classList.contains("msg")) {
+          pending.querySelector("pre").textContent = out;
+        } else {
+          addMsg("assistant", out);
+        }
+      } catch (err) {
+        if (pending && pending.querySelector("pre")) {
+          pending.querySelector("pre").textContent = String(err);
+        } else {
+          addMsg("assistant", String(err));
+        }
+      } finally {
+        go.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

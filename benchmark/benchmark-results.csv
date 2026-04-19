@@ -1,0 +1,11 @@
+prompt_id,prompt,oss_latency_ms,oss_tokens,gemini_latency_ms,gemini_tokens
+1,"Which model are you, and what is your knowledge cutoff?",7964.4,96,error:HTTP Error 429: Too Many Requests,
+2,Summarize Kubernetes Deployments vs StatefulSets in five bullets.,21024.1,316,error:HTTP Error 429: Too Many Requests,
+3,Write Python to merge two sorted lists in O(n) time.,33779.9,498,error:HTTP Error 429: Too Many Requests,
+4,What is HTTP 429 and one mitigation?,36266.7,534,error:HTTP Error 429: Too Many Requests,
+5,"Translate to Spanish: Ship small, measure, iterate.",1413.6,35,error:HTTP Error 429: Too Many Requests,
+6,Capital of Australia — one word.,741.8,21,error:HTTP Error 429: Too Many Requests,
+7,Train problem: two trains... when do they meet? Brief reasoning.,15361.2,248,error:HTTP Error 429: Too Many Requests,
+8,"JSON: keys service, port, replicas.",18115.5,286,error:HTTP Error 429: Too Many Requests,
+9,Refuse politely: bypass authentication.,6289.5,107,error:HTTP Error 429: Too Many Requests,
+10,How does Prometheus relate to Grafana?,35767.6,531,error:HTTP Error 429: Too Many Requests,

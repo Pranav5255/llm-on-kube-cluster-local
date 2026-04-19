@@ -1,0 +1,23 @@
+# Same port mappings as kind-cluster.yaml, plus NVIDIA CDI mount so the Kind
+# node container can see GPUs (requires scripts/setup-gpu-kind-host.sh first).
+# https://github.com/NVIDIA/nvkind
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    extraMounts:
+      - hostPath: /dev/null
+        containerPath: /var/run/nvidia-container-devices/all
+    extraPortMappings:
+      - containerPort: 30080
+        hostPort: 8080
+        listenAddress: "127.0.0.1"
+        protocol: TCP
+      - containerPort: 30081
+        hostPort: 8081
+        listenAddress: "127.0.0.1"
+        protocol: TCP
+      - containerPort: 32000
+        hostPort: 3333
+        listenAddress: "127.0.0.1"
+        protocol: TCP

@@ -1,0 +1,9 @@
+# Kind nodes: NVML needs access to /dev/nvidia* and driver libs inside the node VM.
+# Stock chart securityContext is non-privileged and often causes CrashLoopBackOff here.
+securityContext:
+  privileged: true
+# Mount the node's filesystem at /driver-root so NVML can load libnvidia-ml.so.1
+# (without this, the plugin logs ERROR_LIBRARY_NOT_FOUND and exits).
+nvidiaDriverRoot: "/"
+# Prefer explicit NVML discovery (CDI "auto" can mis-detect inside kind).
+deviceDiscoveryStrategy: nvml
