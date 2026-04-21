@@ -134,14 +134,35 @@ These use metrics from your Kind node, `kube-state-metrics`, and the workloads i
 
 ### GPU metrics in Grafana (NVIDIA)
 
-After **`install-monitoring.sh`**, install the **DCGM exporter** and the official **NVIDIA DCGM Exporter** dashboard (Prometheus scrape + Grafana ConfigMap). **Requires a GPU-capable cluster** (same host + Kind setup as in **GPU (optional — NVIDIA)** above).
+**Requires** the same host + Kind GPU setup as **GPU (optional — NVIDIA)** above.
+
+**Definitive approach (Kind):** do **not** rely on an in-cluster DCGM DaemonSet. On Kind it often fails with **NVML `ERROR_LIBRARY_NOT_FOUND`** or crashes (**SIGSEGV**) when host/container libraries are mixed. Instead:
+
+1. **`install-monitoring.sh`** merges **`helm/values-kps-dcgm-host.yaml`**, which points Prometheus at a default host address (**`172.17.0.1:9400`** — common **docker0** gateway; host-side DCGM listens on the host’s `9400`).
+2. **`USE_GPU=1 ./scripts/install-gpu-observability.sh`** starts **DCGM in Docker on the host** (`scripts/run-dcgm-host.sh`), **re-applies** kube-prometheus-stack after **probing** which host IP is reachable from the Kind node (**`172.17.0.1`**, **`172.18.0.1`**, then the node’s default gateway — order matters), and loads the official **NVIDIA DCGM Exporter** Grafana dashboard (ConfigMap). Override with **`DCGM_SCRAPE_HOST`** if needed.
 
 ```bash
 export PATH="$(pwd)/bin:$PATH"
+./scripts/install-monitoring.sh          # includes DCGM scrape config
 USE_GPU=1 ./scripts/install-gpu-observability.sh
 ```
 
-Helm overrides: `helm/values-dcgm-exporter.yaml` (ServiceMonitor label **`release: kps`** matches the kube-prometheus-stack release). In Grafana, open **Dashboards → Browse** and search for **NVIDIA DCGM Exporter Dashboard** (utilization, memory, power, temperature).
+**Checks:**
+
+- Host: `curl -s http://127.0.0.1:9400/metrics | head` should show `DCGM_FI_` lines.
+- Prometheus UI → **Status → Targets** → **`dcgm-host`** should be **UP**.
+- Grafana → **NVIDIA DCGM Exporter Dashboard** (refresh after a minute or two).
+
+**If Grafana still shows “No data” or the target is DOWN:** Prometheus may be scraping the wrong host IP. The Kind node’s **default gateway is not always** the address that reaches **host-published** ports. Run **`./scripts/diagnose-dcgm-observability.sh`** and check which `wget` from the Prometheus pod succeeds; then set **`DCGM_SCRAPE_HOST`** if the probe script cannot fix it:
+
+```bash
+export DCGM_SCRAPE_HOST=172.17.0.1   # or 172.18.0.1 — whichever works from your cluster
+USE_GPU=1 ./scripts/install-gpu-observability.sh
+```
+
+You can also edit **`helm/values-kps-dcgm-host.yaml`** and run **`./scripts/install-monitoring.sh`** again.
+
+**Optional:** `helm/values-dcgm-exporter.yaml` documents an **in-cluster** Helm install only for environments where DCGM works inside Kubernetes (e.g. some cloud GPU nodes); it is **not** the default for Kind.
 
 ## Benchmark
 

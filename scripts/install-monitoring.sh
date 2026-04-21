@@ -17,6 +17,7 @@ helm upgrade --install kps prometheus-community/kube-prometheus-stack \
   --namespace monitoring \
   --create-namespace \
   -f "$ROOT/helm/values-kps.yaml" \
+  -f "$ROOT/helm/values-kps-dcgm-host.yaml" \
   --wait --timeout 15m
 
 echo ""

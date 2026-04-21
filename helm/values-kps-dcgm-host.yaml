@@ -1,0 +1,13 @@
+# Merged with helm/values-kps.yaml by install-monitoring.sh and install-gpu-observability.sh.
+# DCGM runs on the Docker host (scripts/run-dcgm-host.sh), not inside Kind — avoids NVML / SIGSEGV issues in-cluster.
+# Default below is the usual docker0 gateway (often works for host-published ports). install-gpu-observability.sh
+# probes 172.17.0.1 / 172.18.0.1 / the node's default gateway and upgrades Helm to the first that returns metrics.
+# Override with DCGM_SCRAPE_HOST if needed.
+prometheus:
+  prometheusSpec:
+    additionalScrapeConfigs:
+      - job_name: dcgm-host
+        metrics_path: /metrics
+        static_configs:
+          - targets:
+              - 172.17.0.1:9400

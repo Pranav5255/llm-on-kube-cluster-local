@@ -1,5 +1,9 @@
-# DCGM exporter: Prometheus metrics for NVIDIA GPUs (DCGM_FI_*).
-# ServiceMonitor must carry the same `release` label as kube-prometheus-stack (install-monitoring.sh uses release name: kps).
+# Optional: in-cluster DCGM via Helm (not used by default on Kind — see install-gpu-observability.sh).
+# On Kind, NVML inside the pod often fails unless you use GPU Operator–style mounts; we scrape a host-side
+# exporter instead (scripts/run-dcgm-host.sh + prometheus additionalScrapeConfigs in helm/values-kps.yaml).
+#
+# If you deploy this manually on a cloud GPU node where in-cluster DCGM works:
+#   helm upgrade --install dcgm-exporter gpu-helm-charts/dcgm-exporter -n monitoring -f values-dcgm-exporter.yaml
 serviceMonitor:
   enabled: true
   additionalLabels:

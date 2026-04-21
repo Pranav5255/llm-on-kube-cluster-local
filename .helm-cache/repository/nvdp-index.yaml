@@ -1,0 +1,1377 @@
+apiVersion: v1
+entries:
+  gpu-feature-discovery:
+  - apiVersion: v2
+    appVersion: 0.19.0
+    created: "2026-03-17T20:02:23.099194274Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: bec11e8b1d3f7fb0dd2875d4dadc9774c789e4da1fc5436f286e5c686b009bfb
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.19.0.tgz
+    version: 0.19.0
+  - apiVersion: v2
+    appVersion: 0.18.2
+    created: "2026-03-17T20:02:23.097535935Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: bc1dd6741144117d24b01a7a987f2439747bc6c2d17c71753c2c0401cc157269
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.18.2.tgz
+    version: 0.18.2
+  - apiVersion: v2
+    appVersion: 0.18.1
+    created: "2026-03-17T20:02:23.095884928Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: 63161882e942f35c8e2db3cf49394dd4d0cba73de67b61ec51c304d6558ce70f
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.18.1.tgz
+    version: 0.18.1
+  - apiVersion: v2
+    appVersion: 0.18.0
+    created: "2026-03-17T20:02:23.093434528Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: 4ec33ec44b4a1d061bf11aea0db3650ab08d84db1e03e50871cbe25a3a664e93
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.18.0.tgz
+    version: 0.18.0
+  - apiVersion: v2
+    appVersion: 0.17.4
+    created: "2026-03-17T20:02:23.091801275Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: 979aa3e5fb99c49b787cbaa9b3fd4c807be0102cbf7cd4aea0626b254b776424
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.17.4.tgz
+    version: 0.17.4
+  - apiVersion: v2
+    appVersion: 0.17.3
+    created: "2026-03-17T20:02:23.09033348Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: fae7d6c407db1c04d6d22886b4c85a3c1b3b5f1f1149cde792a2a837f6a633de
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.17.3.tgz
+    version: 0.17.3
+  - apiVersion: v2
+    appVersion: 0.17.2
+    created: "2026-03-17T20:02:23.088756362Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: 905c32edb412e995810b61038d82093c742c8a0bf84c78e1ea219fc253924cd5
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.17.2.tgz
+    version: 0.17.2
+  - apiVersion: v2
+    appVersion: 0.17.1
+    created: "2026-03-17T20:02:23.086434314Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: d4d12ce33652896adfa655f06124c28a27310c1dfb49cd5dfdb774b89c0ee3ab
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.17.1.tgz
+    version: 0.17.1
+  - apiVersion: v2
+    appVersion: 0.17.0
+    created: "2026-03-17T20:02:23.084969495Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: aebdf0047a87cc27b183fc85a3b7e57adc451775bfdc9c5b17948f66b39b89e5
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.17.0.tgz
+    version: 0.17.0
+  - apiVersion: v2
+    appVersion: 0.17.0-rc.1
+    created: "2026-03-17T20:02:23.083489197Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: 53c5a0603545beec03694365a41a473057aa08e70d95d057833ee86e81053b5b
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.17.0-rc.1.tgz
+    version: 0.17.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.16.2
+    created: "2026-03-17T20:02:23.081975987Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: dfaf73970dd4a6dc4caf35f30e853400cbacf4d39bb1827af4f42a3f05cd2f92
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.16.2.tgz
+    version: 0.16.2
+  - apiVersion: v2
+    appVersion: 0.16.1
+    created: "2026-03-17T20:02:23.07970762Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: c8e6837b2ea9d36e93482c04867c034d03221309c4e05177ad93f295a652607c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.16.1.tgz
+    version: 0.16.1
+  - apiVersion: v2
+    appVersion: 0.16.0
+    created: "2026-03-17T20:02:23.078214578Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: ba4d642c523a394df0bcd60220067507e82593b0ae7ed06263f35ee9fb282c02
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.16.0.tgz
+    version: 0.16.0
+  - apiVersion: v2
+    appVersion: 0.16.0-rc.1
+    created: "2026-03-17T20:02:23.076724071Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: bcb50728c35ce00908ba78a066e6e8c979a644a39beae6fdc342923d01ab370a
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.16.0-rc.1.tgz
+    version: 0.16.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.15.1
+    created: "2026-03-17T20:02:23.075228685Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: 72deadcbb5ffb88631d83b041156c318fafb2bd08c76e9287cf909be4897afb0
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.15.1.tgz
+    version: 0.15.1
+  - apiVersion: v2
+    appVersion: 0.15.0
+    created: "2026-03-17T20:02:23.07342295Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: 86f40109ab6e71cbc522f44d6817daae753a315ef693eeef66a5bff5ae89165c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.15.0.tgz
+    version: 0.15.0
+  - apiVersion: v2
+    appVersion: 0.15.0-rc.2
+    created: "2026-03-17T20:02:23.071471514Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.13.0
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: c27b88234412b213539857ae2131a2a0439074eaec6309205fa2990806dca9c0
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.15.0-rc.2.tgz
+    version: 0.15.0-rc.2
+  - apiVersion: v2
+    appVersion: 0.15.0-rc.1
+    created: "2026-03-17T20:02:23.070041039Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.13.0
+    description: A Helm chart for gpu-feature-discovery on Kubernetes
+    digest: c9b253b6608bbc4d2a6d2d6d094c03e26251c4bdec39998bbd04b1245ad4e92d
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: gpu-feature-discovery
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/gpu-feature-discovery-0.15.0-rc.1.tgz
+    version: 0.15.0-rc.1
+  nvidia-device-plugin:
+  - apiVersion: v2
+    appVersion: 0.19.0
+    created: "2026-03-17T20:02:23.161618878Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: ecbf22fbd34dc6a627da2be529a5337d0b78232a2e091b26738fc32ca8f52503
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.19.0.tgz
+    version: 0.19.0
+  - apiVersion: v2
+    appVersion: 0.18.2
+    created: "2026-03-17T20:02:23.159462164Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: b9ad1bcae78149a93c4be1e02c53245133c17a13bd6ecd3c9b355c6edb304bdb
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.18.2.tgz
+    version: 0.18.2
+  - apiVersion: v2
+    appVersion: 0.18.1
+    created: "2026-03-17T20:02:23.157428384Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: fedce14ed94f946d474001b62d28b3f88d276a4be6dcecd6a6b460f020742abc
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.18.1.tgz
+    version: 0.18.1
+  - apiVersion: v2
+    appVersion: 0.18.0
+    created: "2026-03-17T20:02:23.155781516Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.17.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 3abe7949ce08e14dac6a3ebf81d6e2ed3fca15a0a0fb751e67de40c72761d4e4
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.18.0.tgz
+    version: 0.18.0
+  - apiVersion: v2
+    appVersion: 0.17.4
+    created: "2026-03-17T20:02:23.154065419Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 4e597ff31e52ce2196c21b04fe1ca671a1f81664f15ed74c87d691b74e0a9762
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.17.4.tgz
+    version: 0.17.4
+  - apiVersion: v2
+    appVersion: 0.17.3
+    created: "2026-03-17T20:02:23.151673247Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 0efbb37b46505727a741c9dc4862b6ee100684172cfa13945fffdebbab4c68f3
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.17.3.tgz
+    version: 0.17.3
+  - apiVersion: v2
+    appVersion: 0.17.2
+    created: "2026-03-17T20:02:23.150204461Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 928813962489877b1c9905fa7de872358c2b1576cbe15a94a65a1610c8098001
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.17.2.tgz
+    version: 0.17.2
+  - apiVersion: v2
+    appVersion: 0.17.1
+    created: "2026-03-17T20:02:23.148684249Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 542ce451ce5d4611df00959e61c5638b7deeaf65c13daf03914d4688f94ae555
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.17.1.tgz
+    version: 0.17.1
+  - apiVersion: v2
+    appVersion: 0.17.0
+    created: "2026-03-17T20:02:23.147213238Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 9cb01c5e1cd591db7c2f8c5eca73381b90f0530888da21019a94fe761e6856a1
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.17.0.tgz
+    version: 0.17.0
+  - apiVersion: v2
+    appVersion: 0.17.0-rc.1
+    created: "2026-03-17T20:02:23.145686684Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 4b2ed43d68587e71478aa09d03bb797c1b05abd226f64a0c1fe9400c76744251
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.17.0-rc.1.tgz
+    version: 0.17.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.16.2
+    created: "2026-03-17T20:02:23.14330989Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 32bd750a73449583d798fee2bdc908bc542fd41f193808ca1ad47bdabfdf4e90
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.16.2.tgz
+    version: 0.16.2
+  - apiVersion: v2
+    appVersion: 0.16.1
+    created: "2026-03-17T20:02:23.141840903Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: a77b4e81fd56a11e39536500a7a6538899b952c4b4370200280bce313dffda6a
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.16.1.tgz
+    version: 0.16.1
+  - apiVersion: v2
+    appVersion: 0.16.0
+    created: "2026-03-17T20:02:23.140385712Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: fadb5c96c444c4c9f2822b078843aad230f8edccf8bc0d69f7f613cd9cdf600d
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.16.0.tgz
+    version: 0.16.0
+  - apiVersion: v2
+    appVersion: 0.16.0-rc.1
+    created: "2026-03-17T20:02:23.138900305Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: d0c7f29ad87eb5e9d9d382ffd02fc3c40431b0302a34b0d4c5de1be2bbd9527b
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.16.0-rc.1.tgz
+    version: 0.16.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.15.1
+    created: "2026-03-17T20:02:23.136773287Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 6a7c62d59ee0f226e0924c15524ce500350b78683ff3eb5f28f1972e93ed54de
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.15.1.tgz
+    version: 0.15.1
+  - apiVersion: v2
+    appVersion: 0.15.0
+    created: "2026-03-17T20:02:23.135312696Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.15.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: f22685c3ee0ff1c81194ccb73d34878abbb59099bc85337b4f322062a1fc3982
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.15.0.tgz
+    version: 0.15.0
+  - apiVersion: v2
+    appVersion: 0.15.0-rc.2
+    created: "2026-03-17T20:02:23.133841435Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.13.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: f270e946bccc7b5b59f75d9bb5396ff908363380d560e681bdc896a3ae63f07e
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.15.0-rc.2.tgz
+    version: 0.15.0-rc.2
+  - apiVersion: v2
+    appVersion: 0.15.0-rc.1
+    created: "2026-03-17T20:02:23.132438551Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.13.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 75dde6831ecaf965fc894816f5ba2d89cd2d81dbe6d62cb3224daa8e592a6045
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.15.0-rc.1.tgz
+    version: 0.15.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.14.5
+    created: "2026-03-17T20:02:23.130995533Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.2
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: b400939756dd577269447de1afe78bcf189347f17c164e934e6522537b272b03
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.5.tgz
+    version: 0.14.5
+  - apiVersion: v2
+    appVersion: 0.14.4
+    created: "2026-03-17T20:02:23.128790048Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.2
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 48ae05d584933ae330e7f993a136adb0fa4641a65dc61b6126beaede84ca161c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.4.tgz
+    version: 0.14.4
+  - apiVersion: v2
+    appVersion: 0.14.3
+    created: "2026-03-17T20:02:23.127408735Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.2
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 60498c9fe2377895bda850bd67c5d5fa12f9d24fe2393919cc656b1ea13c06f5
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.3.tgz
+    version: 0.14.3
+  - apiVersion: v2
+    appVersion: 0.14.2
+    created: "2026-03-17T20:02:23.126007905Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.2
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 7d159cbaa0dc11d329b787dc5cd65f2c08665adfa5c2505ff9b879582ceb3994
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.2.tgz
+    version: 0.14.2
+  - apiVersion: v2
+    appVersion: 0.14.1
+    created: "2026-03-17T20:02:23.124578001Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.1
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 4ce72465fa8b43ae5fa96f93daba4894fa2b4887d792220aa401db2168551ccc
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.1.tgz
+    version: 0.14.1
+  - apiVersion: v2
+    appVersion: 0.14.0
+    created: "2026-03-17T20:02:23.122445463Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 6f17c26ac4a7f84beec8d20daf06c4a537ef7d7ffe62e9c89219cd76d7f9b3a1
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.0.tgz
+    version: 0.14.0
+  - apiVersion: v2
+    appVersion: 0.14.0-rc.3
+    created: "2026-03-17T20:02:23.121030236Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.0-rc.2
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 44470a5298e80c50d4d8dac1f4ee894b6bb4fbf8b6b2c0f38b0b01fac484de23
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.0-rc.3.tgz
+    version: 0.14.0-rc.3
+  - apiVersion: v2
+    appVersion: 0.14.0-rc.2
+    created: "2026-03-17T20:02:23.11960407Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.0-rc.1
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: b9d14d5ee85f8942587af36ead3c0a78b6454dd33876ae2fb46af9a8145261d9
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.0-rc.2.tgz
+    version: 0.14.0-rc.2
+  - apiVersion: v2
+    appVersion: 0.14.0-rc.1
+    created: "2026-03-17T20:02:23.118150522Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.12.1
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.8.0-rc.1
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: ccb30feeb1d0e426521f76b84ed6412d35b0626d4a3c190f3cbf83d83aafb4a2
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.14.0-rc.1.tgz
+    version: 0.14.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.13.0
+    created: "2026-03-17T20:02:23.11667892Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.7.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: fe7c6bc03805a1340c6df15ef138422d90e53361495d2a43b13433898681d647
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.13.0.tgz
+    version: 0.13.0
+  - apiVersion: v2
+    appVersion: 0.13.0-rc.3
+    created: "2026-03-17T20:02:23.114394496Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.7.0-rc.3
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 3aa9a9b02b97237d9f18dfbf2abf2b3b15386e7e066626e2dc1f2fdf5c243e68
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.13.0-rc.3.tgz
+    version: 0.13.0-rc.3
+  - apiVersion: v2
+    appVersion: 0.13.0-rc.2
+    created: "2026-03-17T20:02:23.113095316Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.7.0-rc.2
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 312afce7b38941f6d25c9e573c87a327aacb714b623e22cfb9b3cde89fd1ac91
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.13.0-rc.2.tgz
+    version: 0.13.0-rc.2
+  - apiVersion: v2
+    appVersion: 0.13.0-rc.1
+    created: "2026-03-17T20:02:23.11182551Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.7.0-rc.1
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: af3a81c60d229b3abfe1bdfae7d0947efbebc2242aef0680b55fa95bd1fc2e9c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.13.0-rc.1.tgz
+    version: 0.13.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.12.3
+    created: "2026-03-17T20:02:23.110560483Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.6.2
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 75493ffbad38dfdd3184964062f28382e15581ea0bec05bb6667712a5402b234
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.3.tgz
+    version: 0.12.3
+  - apiVersion: v2
+    appVersion: 0.12.2
+    created: "2026-03-17T20:02:23.109252777Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.6.1
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 1ddbf79feb3076937fbcf22808d233f5b74af143a8b3cf4a670548bce8e39d2d
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.2.tgz
+    version: 0.12.2
+  - apiVersion: v2
+    appVersion: 0.12.1
+    created: "2026-03-17T20:02:23.107096688Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.6.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 982f10fd7bc281555a83b8d0eeff13dc0681f4aafa43c93a699f263492128c9c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.1.tgz
+    version: 0.12.1
+  - apiVersion: v2
+    appVersion: 0.12.0
+    created: "2026-03-17T20:02:23.105892535Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.6.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: fcfaf64f21cf4cfe3f7cff89aa354a8c82336652f91512e4f2dd9f437b45ca26
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.0.tgz
+    version: 0.12.0
+  - apiVersion: v2
+    appVersion: 0.12.0-rc.6
+    created: "2026-03-17T20:02:23.104671961Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.6.0-rc.1
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 0e576e4b448a9938b0f68bd387ad550a8075ec24279060fe9077312a7fba5cf9
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.0-rc.6.tgz
+    version: 0.12.0-rc.6
+  - apiVersion: v2
+    appVersion: 0.12.0-rc.5
+    created: "2026-03-17T20:02:23.103459793Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.5.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 39eaf62ff34eb8256454ce1ddbb4cf03cdf441d1cd7d9daff4c05e34c70b6c7c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.0-rc.5.tgz
+    version: 0.12.0-rc.5
+  - apiVersion: v2
+    appVersion: 0.12.0-rc.4
+    created: "2026-03-17T20:02:23.102254737Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled,gfd.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.11.0
+    - alias: gfd
+      condition: gfd.enabled
+      name: gpu-feature-discovery
+      repository: ""
+      version: 0.5.0
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: c19c1efbc50798c545728dce8876ae517bd6b2a110fbbb4ace34d78c0dfd4b37
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.0-rc.4.tgz
+    version: 0.12.0-rc.4
+  - apiVersion: v2
+    appVersion: 0.12.0-rc.3
+    created: "2026-03-17T20:02:23.100670384Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 8fade18fc4f11b43e0690211fdbaf7b4fd81862a6824267c6ed5cbbf4f11a8a7
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.0-rc.3.tgz
+    version: 0.12.0-rc.3
+  - apiVersion: v2
+    appVersion: 0.12.0-rc.2
+    created: "2026-03-17T20:02:23.100240443Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: b5d6ee330ee18a1102a26ff43df7ec6dce5d354d1757b9e9d8e790cc4bb4688b
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.0-rc.2.tgz
+    version: 0.12.0-rc.2
+  - apiVersion: v2
+    appVersion: 0.12.0-rc.1
+    created: "2026-03-17T20:02:23.09998089Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 5c617c9c829bea516bb7a5db2baf591d34bebb58e79fbead06f3f974cfb7ba86
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.12.0-rc.1.tgz
+    version: 0.12.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.11.0
+    created: "2026-03-17T20:02:23.099713672Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 0a6c5c4a1d7753625d9cda0de7994ce9dbd683846bfb4c9ca8b0bbeb5cf98c4b
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.11.0.tgz
+    version: 0.11.0
+  - apiVersion: v2
+    appVersion: 0.10.0
+    created: "2026-03-17T20:02:23.099464007Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 2875296daa3b2d82019115131faad5939e1b7564739ca4f15ff6f31babf2b2ba
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.10.0.tgz
+    version: 0.10.0
+  - apiVersion: v2
+    appVersion: 0.9.0
+    created: "2026-03-17T20:02:23.165654587Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 84988d3baa300487a2dc8e43fe2fb52a8587c82391b33bf9ce18ce577a6926c5
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.9.0.tgz
+    version: 0.9.0
+  - apiVersion: v2
+    appVersion: 0.8.2
+    created: "2026-03-17T20:02:23.165420311Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 688a0d373716cbe7992d00c469e7deb68d13f86fb6b9151e58952af77c542e51
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.8.2.tgz
+    version: 0.8.2
+  - apiVersion: v2
+    appVersion: 0.8.1
+    created: "2026-03-17T20:02:23.165188068Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: b401a983702d654919944306069ad0c9e934b17bf71c4b2403a7b20a270bb79c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.8.1.tgz
+    version: 0.8.1
+  - apiVersion: v2
+    appVersion: 0.8.0
+    created: "2026-03-17T20:02:23.164950385Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: f1bda480b34cc3cd11436e64ef9e05e61ef4275bc4def1f0ee4353a8c5738e90
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v2
+    appVersion: 0.7.3
+    created: "2026-03-17T20:02:23.164697654Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: dfbad87e2bb96b07fb7d954feaa75b31f9fa6094cdf79629cdd06b059d73579c
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.3.tgz
+    version: 0.7.3
+  - apiVersion: v2
+    appVersion: 0.7.2
+    created: "2026-03-17T20:02:23.164465472Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 96baf5b857113497c3d9cf607af15d9baeb6eda7e3301eeb9617c065df0b2121
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.2.tgz
+    version: 0.7.2
+  - apiVersion: v2
+    appVersion: 0.7.1
+    created: "2026-03-17T20:02:23.164234131Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: db847545cfa603f55b79284933f6d44a1193aeedc37c85e861dbe62d9b344a49
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.1.tgz
+    version: 0.7.1
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2026-03-17T20:02:23.164004242Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 4e982ffc0fbca6b5ee2cb20ec6c88b30bc27f8ef7fdf1481b8f345b34f53d1a0
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.8
+    created: "2026-03-17T20:02:23.16375055Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 7c8ffd37565d6395a288fc51d6a8af4f57cd23b571656e8c82ab1ca84924acbe
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.8.tgz
+    version: 0.7.0-rc.8
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.7
+    created: "2026-03-17T20:02:23.163512065Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 457b324725f8ad68b609110c74b2eac363d8521d17f1db470636c7b059d2c3e7
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.7.tgz
+    version: 0.7.0-rc.7
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.6
+    created: "2026-03-17T20:02:23.163260286Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: ef40df5dbe87c10860741db634fe30236bea12e5f9d1ccfcd0084307bcd89545
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.6.tgz
+    version: 0.7.0-rc.6
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.5
+    created: "2026-03-17T20:02:23.163028144Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: f0697e1ea997a32b32b80e1269fb0520fa09e30d77f8b7299d46faeb43fc299a
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.5.tgz
+    version: 0.7.0-rc.5
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.4
+    created: "2026-03-17T20:02:23.162774672Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: ff0e44aa17572f586fac1b7fc483c0a6664490f76802e5739f3116ea4d8d19d0
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.4.tgz
+    version: 0.7.0-rc.4
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.3
+    created: "2026-03-17T20:02:23.162544863Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: aedd1691a082b089998d7b4a699997373a9af51cb25a542da347412d27319191
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.3.tgz
+    version: 0.7.0-rc.3
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.2
+    created: "2026-03-17T20:02:23.162317039Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: d61cfe352a5fdebb656636a1b78d81661eb9425c4fb00f2f0dadd9a1d4edebca
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.2.tgz
+    version: 0.7.0-rc.2
+  - apiVersion: v2
+    appVersion: 0.7.0-rc.1
+    created: "2026-03-17T20:02:23.162085518Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 4ec5ce800641292bae9c49e0cd0c564829864f09371a498e4765e8545be8d1e5
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.7.0-rc.1.tgz
+    version: 0.7.0-rc.1
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2026-03-17T20:02:23.161875486Z"
+    description: A Helm chart for the nvidia-device-plugin on Kubernetes
+    digest: 9e41b02c88844890c5f4b78a6d0beaeb936b478116172bb015381ccf32f6057a
+    home: https://github.com/NVIDIA/k8s-device-plugin
+    kubeVersion: '>= 1.10.0-0'
+    name: nvidia-device-plugin
+    type: application
+    urls:
+    - https://nvidia.github.io/k8s-device-plugin/stable/nvidia-device-plugin-0.6.0.tgz
+    version: 0.6.0
+generated: "2026-03-17T20:02:23.068326985Z"
